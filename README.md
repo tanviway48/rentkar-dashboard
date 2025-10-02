@@ -1,0 +1,68 @@
+# RENTKAR Dashboard
+
+This project is a **RENTKAR-inspired delivery management system** with separate **Admin** and **Partner** dashboards. Built with **Next.js**, **React**, **TypeScript**, and **Node.js APIs**.
+
+---
+
+## Features
+
+### Admin Dashboard
+- Create new orders
+- View all orders
+- Assign orders to partners
+- Role-based access control (only admins)
+
+### Partner Dashboard
+- View assigned orders
+- Update order status (Created, Assigned, Picked, Delivered, Cancelled)
+- Toggle availability (Online/Offline)
+
+### Login/Register
+- Role-based login for Admin and Partner
+- Form validations
+- Modern RENTKAR-inspired UI
+
+### Other Features
+- Colored status badges for order status
+- Responsive UI
+- Focus animations and button hover effects
+
+---
+
+## Technologies Used
+- Next.js (React + SSR)
+- TypeScript
+- CSS (with RENTKAR-like styling)
+- Node.js / Express API (optional)
+- Vercel for deployment
+
+---
+
+## Demo
+[Live Demo](https://your-vercel-demo-link.vercel.app)
+
+---
+
+## GitHub Repository
+[Repo Link](https://github.com/yourusername/rentkar-dashboard)
+
+---
+
+## Test Credentials
+
+### Admin
+- Email: admin@examplex.com
+- Password: admin123
+
+### Partner
+- Email: adamdoe@example.com
+- Password: adamdoe
+
+---
+
+## How to Run Locally
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/rentkar-dashboard.git
+cd rentkar-dashboard
