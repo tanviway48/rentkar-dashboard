@@ -1,3 +1,10 @@
+## Demo Video
+
+Watch the Delivery Management System demo: [Click here to view](https://drive.google.com/file/d/FILE_ID/view?usp=sharing)
+
+
+
+
 # RENTKAR Dashboard
 
 This project is a **RENTKAR-inspired delivery management system** with separate **Admin** and **Partner** dashboards. Built with **Next.js**, **React**, **TypeScript**, and **Node.js APIs**.
@@ -38,8 +45,7 @@ This project is a **RENTKAR-inspired delivery management system** with separate 
 
 ---
 
-## Demo
-[Live Demo](https://your-vercel-demo-link.vercel.app)
+
 
 ---
 
