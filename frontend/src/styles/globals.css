@@ -1,0 +1,267 @@
+/* globals.css */
+
+/* Root colors */
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #6366f1;
+  --accent-color: #10b981;
+  --bg-color: #f3f4f6;
+  --text-color: #111827;
+  --card-bg: #ffffff;
+  --border-color: #e5e7eb;
+}
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Forms */
+input, select {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--text-color);
+}
+
+:root {
+  --primary-color: #4f46e5; /* Indigo */
+  --secondary-color: #6b7280; /* Gray */
+  --success-color: #10b981; /* Green */
+  --error-color: #ef4444; /* Red */
+  --bg-color: #f9fafb; /* Light gray */
+  --card-bg: #ffffff;
+  --border-color: #e5e7eb;
+  --btn-padding: 0.5rem 1rem;
+  --btn-radius: 0.5rem;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: #111827;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+.container {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+input, select, button {
+  font-family: var(--font-family);
+  padding: 0.5rem;
+  border-radius: var(--btn-radius);
+  border: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+
+input, select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+select {
+  width: auto;
+}
+
+.error {
+  color: var(--error-color);
+}
+
+.success {
+  color: var(--success-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+  }
+}
+
+
+
+
+/* RENTKAR UI Enhancements */
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  outline: none;
+  background-color: white;
+  position: relative;
+}
+
+input:focus, select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+/* Animated underline effect */
+input:focus::after, select:focus::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, #4f46e5, #10b981);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  animation: expandUnderline 0.3s forwards;
+}
+
+@keyframes expandUnderline {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Bouncy button hover */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Smooth container shadow effect */
+.login-register-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+}
+
+.login-register-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.15);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+
+
