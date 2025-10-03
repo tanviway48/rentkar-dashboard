@@ -72,9 +72,4 @@ This project is a **RENTKAR-inspired delivery management system** with separate 
 
 ---
 
-## How to Run Locally
 
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/rentkar-dashboard.git
-cd rentkar-dashboard
